@@ -199,6 +199,9 @@ public class ContractServiceImplTest {
 		assertThat(result).isSameAs(expectedContract);
 	}
 	
+	/**
+	 * Test that an exception is thrown when updating a contract that doesn't exist.
+	 */
 	@Test(expected=IllegalArgumentException.class)
 	public void testUpdateNonExisting() {
 		
